@@ -1,0 +1,37 @@
+/*########################HEAD########################*/
+.header{
+    background-color:rgb(24, 23, 23);
+    color:#e40c3c;
+    padding: 20px;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/*########################MENU########################*/
+.menu {
+    overflow: hidden;
+  }
+  
+.menu a {
+    float: left;
+    display: block;
+    color:#e40c3c;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family:'Courier New', Courier, monospace;
+
+  }
+  .menu a:hover {
+    color:#e40c3c;
+  }
+body{
+    background-color:rgb(24, 23, 23);
+}
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  margin-top: 50%;
+}
