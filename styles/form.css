@@ -1,31 +1,49 @@
+/* Create three equal columns that floats next to each other */
 .column {
-    float: left;
-    padding: 10px;
-    color: rgb(248, 248, 248);
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  color: rgb(248, 248, 248);
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
   }
-  
-  /* Left and right column */
-  .column.side {
-    width: 25%;
-  }
-  
-  /* Middle column */
-  .column.middle {
-    width: 50%;
-    margin-left: 10%;
-  }
-  
-  /* Clear floats after the columns */
-  .row::after {
-    display: table;
-    clear: both;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .column.side, .column.middle {
-      width: 100%;
-    }
-  }
+}
 .form, label, input{
-    font-size: 30px;
+  color:rgb(248, 248, 248) ;
+  font-size: 30px;
+  border-radius: 5px;
+
+}
+input, textarea{
+  border: 2px solid #e40c3c;
+  background-color: rgb(24, 23, 23) ;
+  color:rgb(248, 248, 248) ;
+  border-radius: 5px;
+}
+
+select {
+  background-color: rgb(24, 23, 23); /* Color de fondo */
+  color:#e0f7fa; /* Color de la letra */
+  border: 2px solid #e40c3c; /* Borde con color */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 5px 10px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de la letra */
+  width: 43.5%;
+  padding: 5px 5px;
+}
+
+input[type=submit], input[type=reset]{
+  background-color: #e40c3c;
+  padding:5px ;
 }

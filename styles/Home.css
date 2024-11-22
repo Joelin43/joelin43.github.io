@@ -1,30 +1,57 @@
 .column {
-    float: left;
-    padding: 10px;
-    color: rgb(248, 248, 248);
+  float: left;
+  width: 20%;
+  padding: 15px;
+}
+.column1 {
+  float: left;
+  width: 60%;
+  padding: 15px;
+}
+.column2 {
+  float: left;
+  width: 1%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
   }
-  
-  /* Left and right column */
-  .column.side {
-    width: 25%;
+  .column1 {
+    width: 100%;
   }
-  
-  /* Middle column */
-  .column.middle {
-    width: 65%;
+  .column2 {
+    width: 100%;
   }
-  
-  /* Clear floats after the columns */
-  .row::after {
-    display: table;
-    clear: both;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .column.side, .column.middle {
-      width: 100%;
-    }
-  }
+}
 .logo{
   margin-left: 35%;
 }  
+
+.lista {
+  list-style: none; /* Elimina los estilos predeterminados de la lista */
+  padding: 0;
+  margin: 0;
+}
+
+.lista li {
+  display: flex; /* Flexbox para alinear los elementos */
+  align-items: center; /* Centra verticalmente el texto con el ícono */
+  margin-bottom: 10px; /* Espaciado entre los elementos */
+}
+pre{
+  font-family:'Courier New', Courier, monospace;
+  color: #e40c3c;
+  font-weight: bold;
+}
+
+

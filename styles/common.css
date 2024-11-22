@@ -1,10 +1,19 @@
+body{
+  background-color:rgb(24, 23, 23);
+}
+
 /*########################HEAD########################*/
 .header{
     background-color:rgb(24, 23, 23);
     color:#e40c3c;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+    font-size: 35px;
     font-family:'Courier New', Courier, monospace;
+}
+.header h1{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /*########################MENU########################*/
@@ -17,6 +26,7 @@
     display: block;
     color:#e40c3c;
     text-align: center;
+    font-size: 25px;
     padding: 14px 16px;
     text-decoration: none;
     font-family:'Courier New', Courier, monospace;
@@ -25,13 +35,12 @@
   .menu a:hover {
     color:#e40c3c;
   }
-body{
-    background-color:rgb(24, 23, 23);
-}
-/* Style the footer */
+
+/*########################FOOT########################*/
 .footer {
-  background-color: #f1f1f1;
-  padding: 10px;
+  flex: 0; /* El footer ocupa solo su tamaño de contenido */
+  background-color: #333; /* Color de fondo para visibilidad */
+  color: white;
   text-align: center;
-  margin-top: 50%;
+  padding: 10px 0;
 }
