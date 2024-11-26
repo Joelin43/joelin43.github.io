@@ -17,24 +17,43 @@ body{
 }
 
 /*########################MENU########################*/
+
 .menu {
     overflow: hidden;
   }
-  
-.menu a {
-    float: left;
-    display: block;
-    color:#e40c3c;
-    text-align: center;
-    font-size: 25px;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family:'Courier New', Courier, monospace;
 
-  }
-  .menu a:hover {
-    color:#e40c3c;
-  }
+.menu a {
+  float: left;
+  display: block;
+  color:#e40c3c;
+  text-align: center;
+  font-size: 25px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family:'Courier New', Courier, monospace;
+}
+.menu a:hover {
+  color:#e40c3c;
+}
+
+/*########################LOGO LATRAL IZQUIERDO########################*/
+
+.lista {
+  list-style: none; /* Elimina los estilos predeterminados de la lista */
+  padding: 0;
+  margin: 0;
+}
+
+.lista li {
+  display: flex; /* Flexbox para alinear los elementos */
+  align-items: center; /* Centra verticalmente el texto con el ícono */
+  margin-bottom: 10px; /* Espaciado entre los elementos */
+}
+pre{
+  font-family:'Courier New', Courier, monospace;
+  color: #e40c3c;
+  font-weight: bold;
+}
 
 /*########################FOOT########################*/
 .footer {

@@ -25,6 +25,11 @@
   border-radius: 5px;
 
 }
+
+.logo{
+  margin-left: 21.2%;
+}  
+
 input, textarea{
   border: 2px solid #e40c3c;
   background-color: rgb(24, 23, 23) ;
