@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="icon" href="imgs/LogoMini.png" type="image/x-icon">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <!--Header -->
+    <div class="header">
+        <h1>Joel Rovira</h1>
+    </div>
+
+    <!--Menu -->
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="Proyectos.html">Proyectos</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h2></h2>
+            <img class="logo" src="imgs/LogoJ.png" width="100" height="75">
+            <ul class="lista">
+                <li>
+                    <img src="imgs/GHicon2.png" alt="GitHub Logo" class="icon">
+                    <a href="https://github.com/Joelin43"> GitHub</a>
+                </li>
+                <li>
+                    <img src="imgs/Xlogo1.png" alt="Twitter Logo" class="icon">
+                    <a> Twitter</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h1>Contact:</h1>
+            <form class="form" method="POST" action="scripts/contact.php">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" name="nombre"><br><br>
+
+                <label for="email">Correo:</label><br>
+                <input type="email" name="email" placeholder="example@example.com"><br><br>
+
+                <label for="Env">Desde donde:</label><br>
+                <select id="paises" name="paises">
+                    <option value="AF">Afganistán</option>
+                    <option value="AL">Albania</option>
+                    <option value="DZ">Argelia</option>
+                    <option value="AR">Argentina</option>
+                    <option value="AM">Armenia</option>
+                    <option value="AW">Aruba</option>
+                    <option value="AU">Australia</option>
+                    <option value="AT">Austria</option>
+                    <option value="AZ">Azerbaiyán</option>
+                    <option value="BS">Bahamas</option>
+                    <option value="BH">Bahréin</option>
+                    <option value="BD">Bangladés</option>
+                    <option value="BB">Barbados</option>
+                    <option value="BY">Bielorrusia</option>
+                    <option value="BE">Bélgica</option>
+                    <option value="BZ">Belice</option>
+                    <option value="BJ">Benín</option>
+                    <option value="BT">Bután</option>
+                    <option value="BO">Bolivia</option>
+                    <option value="BA">Bosnia y Herzegovina</option>
+                    <option value="BW">Botsuana</option>
+                    <option value="BR">Brasil</option>
+                    <option value="BN">Brunei</option>
+                    <option value="BG">Bulgaria</option>
+                    <option value="BF">Burkina Faso</option>
+                    <option value="BI">Burundi</option>
+                    <option value="KH">Camboya</option>
+                    <option value="CM">Camerún</option>
+                    <option value="CA">Canadá</option>
+                    <option value="CV">Cabo Verde</option>
+                    <option value="CF">República Centroafricana</option>
+                    <option value="TD">Chad</option>
+                    <option value="CL">Chile</option>
+                    <option value="CN">China</option>
+                    <option value="CO">Colombia</option>
+                    <option value="KM">Comores</option>
+                    <option value="CG">Congo (Brazzaville)</option>
+                    <option value="CD">República Democrática del Congo</option>
+                    <option value="CR">Costa Rica</option>
+                    <option value="CI">Côte d'Ivoire</option>
+                    <option value="HR">Croacia</option>
+                    <option value="CU">Cuba</option>
+                    <option value="CY">Chipre</option>
+                    <option value="CZ">República Checa</option>
+                    <option value="DK">Dinamarca</option>
+                    <option value="DJ">Yibuti</option>
+                    <option value="DM">Dominica</option>
+                    <option value="DO">República Dominicana</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="EG">Egipto</option>
+                    <option value="SV">El Salvador</option>
+                    <option value="EE">Estonia</option>
+                    <option value="ET">Etiopía</option>
+                    <option value="FJ">Fiyi</option>
+                    <option value="FI">Finlandia</option>
+                    <option value="FR">Francia</option>
+                    <option value="GA">Gabón</option>
+                    <option value="GM">Gambia</option>
+                    <option value="GE">Georgia</option>
+                    <option value="DE">Alemania</option>
+                    <option value="GH">Ghana</option>
+                    <option value="GI">Gibraltar</option>
+                    <option value="GR">Grecia</option>
+                    <option value="GL">Groenlandia</option>
+                    <option value="GT">Guatemala</option>
+                    <option value="GG">Guernsey</option>
+                    <option value="GN">Guinea</option>
+                    <option value="GW">Guinea-Bissau</option>
+                    <option value="GY">Guyana</option>
+                    <option value="HT">Haití</option>
+                    <option value="VA">Ciudad del Vaticano</option>
+                    <option value="HN">Honduras</option>
+                    <option value="HK">Hong Kong (China)</option>
+                    <option value="HU">Hungría</option>
+                    <option value="IS">Islandia</option>
+                    <option value="IN">India</option>
+                    <option value="ID">Indonesia</option>
+                    <option value="IQ">Irak</option>
+                    <option value="IR">Irán</option>
+                    <option value="IL">Israel</option>
+                    <option value="IT">Italia</option>
+                    <option value="JM">Jamaica</option>
+                    <option value="JP">Japón</option>
+                    <option value="YE">Yemen</option>
+                    <option value="ZM">Zambia</option>
+                    <option value="ZW">Zimbabue</option>
+                  </select><br>
+
+                <label for="Env">Que vas a enviar:</label><br>
+                <select name="Env">
+                    <option value="Sug">Sugerencia</option>
+                    <option value="Queja">Queja</option>
+                </select><br><br>
+
+                <label for="message">Mensaje:</label><br>
+                <textarea name="message" rows="10" cols="30" style="width: 388px; height: 159px;"></textarea> <br><br>
+            
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+
+        <div class="column">
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Joel Rovira. Todos los derechos reservados.</p>
+    </div>
+</body>
+
+</html>
