@@ -1,0 +1,7 @@
+:root {
+    --color-accent: #ef4444;
+}
+
+[data-theme="dark"] {
+    --color-accent: #ef4444;
+}
