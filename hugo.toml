@@ -1,6 +1,6 @@
 baseURL = 'https://joelin43.github.io'
 languageCode = 'es'
-title = 'Joelin43'
+title = 'Joel Rovira | IT & Cybersecurity'
 theme = "minimal-black"
 
 # Enable search index generation and web app manifest
@@ -16,11 +16,11 @@ theme = "minimal-black"
 
 [params]
   brand = "Joel Rovira"
-  description = "A minimal, dark-mode first personal site, or whatever else you want it to be about"
+  description = "Estudiante de ASIR aprendiendo ciberseguridad"
 
   # Favicon - Place your favicon files in /static/ directory
   # Supported formats: .ico, .png, .svg
-  favicon = "icons/favicon.svg"
+  favicon = "icons/favicon.ico"
   appleTouchIcon = "apple-touch-icon.png"
 
   # Logo (optional)
@@ -29,7 +29,9 @@ theme = "minimal-black"
   # Project and blog intro text
   projectsIntro = "Selected projects to display list." # Can be empty
   blogIntro = "" # Can be empty
-
+  
+  customCSS = ["css/custom.css"]
+  
   # Web App Manifest Configuration (PWA support)
   [params.manifest]
     themeColor = "#e82525"
@@ -63,63 +65,52 @@ theme = "minimal-black"
     techMarqueeLabel = "Experienced In"
 
     # Technology Stack Display
+  [[params.home.tech]]
+      label = "Linux"
+      icon = "devicon-linux-plain"
+
     [[params.home.tech]]
       label = "Python"
       icon = "devicon-python-plain"
-
- 
-    [[params.home.tech]]
-      label = "Debian"
-      icon = "devicon-debian-plain"
-
-    [[params.home.tech]]
-      label = "GitLab"
-      icon = "devicon-gitlab-plain"
 
     [[params.home.tech]]
       label = "Docker"
       icon = "devicon-docker-plain"
 
-
-    [[params.home.techReverse]]
+    [[params.home.tech]]
       label = "Git"
       icon = "devicon-git-plain"
 
     [[params.home.techReverse]]
-      label = "Hugo"
-      icon = "devicon-hugo-plain"  
-
-
-    [[params.home.techReverse]]
-      label = "Json"
-      icon = "devicon-json-plain" 
+      label = "GitHub"
+      icon = "devicon-github-original"
 
     [[params.home.techReverse]]
-      label = "Linux"
-      icon = "devicon-linux-plain"          
+      label = "Bash"
+      icon = "devicon-bash-plain"
+
+    [[params.home.techReverse]]
+      label = "Debian"
+      icon = "devicon-debian-plain"
 
     [[params.home.techReverse]]
       label = "Markdown"
-      icon = "devicon-markdown-original"  
-
-    [[params.home.techReverse]]
-      label = "YAML"
-      icon = "devicon-yaml-plain"  
-
-    [[params.home.techReverse]]
-      label = "Wordpress"
-      icon = "devicon-wordpress-plain"      
+      icon = "devicon-markdown-original"      
 
   # About Page Alternative Layout Configuration - Optional
   [params.about.alt]
     # Stats displayed in the profile card sidebar
     [[params.about.alt.stats]]
-      value = "5+"
-      label = "Years Coding"
-
+      value = "ASIR"
+      label = "Studies"
+    
     [[params.about.alt.stats]]
-      value = "20+"
-      label = "Projects"
+      value = "Linux"
+      label = "Daily Environment"
+    
+    [[params.about.alt.stats]]
+      value = "Cyber"
+      label = "Main Interest"
 
     [[params.about.alt.stats]]
       value = "∞"
@@ -144,22 +135,22 @@ theme = "minimal-black"
 
   # Hero Section Configuration
   [params.hero]
-    badge = "IT Student"
+    badge = "ASIR Student"
     title = "Hey, I'm Joel Rovira"
-    role = "Subtitle for title with role perspective"
+    role = "IT & Cybersecurity Student"
     summary = "You can write your summary to be displayed here."
     # avatar = "images/avatar.jpg"  # Optional: 400x400px recommended
     location = "Barcelona, España"
-    focus = "Currently focused on Hugo themes & developer experience."
+    focus = "Currently focused on cybersecurity, Linux and networking."
     available = true
     availableLabel = "Available for work"
 
     nowLabel = "Quick Facts"
     nowIntro = "Right now I'm mainly:"
     now = [
-      "Building minimal Hugo themes",
-      "Exploring dark-mode design patterns",
-      "Writing about web performance"
+      "Learning cybersecurity and pentesting",
+      "Building personal projects and labs",
+      "Improving my Linux and networking skills"
     ]
 
     [params.hero.primary]
@@ -183,36 +174,13 @@ theme = "minimal-black"
 
   [[params.social]]
     label = "LinkedIn"
-    url = "https://www.linkedin.com/in/jimchristopoulos-542512221/"
+    url = "https://www.linkedin.com/in/joel-rovira-luque/"
     icon = "fa-brands fa-linkedin-in"
 
   [[params.social]]
     label = "Email"
-    url = "mailto:you@example.com"
+    url = "mail:joelrovira20@gmail.com"
     icon = "fa-regular fa-envelope"
-
-  # Analytics Configuration
-  [params.analytics]
-    # Google Analytics (GA4)
-    # googleAnalytics = "G-XXXXXXXXXX"
-
-    # Plausible Analytics (privacy-friendly)
-    # [params.analytics.plausible]
-    #   enabled = true
-    #   domain = "yourdomain.com"
-    #   scriptUrl = "https://plausible.io/js/script.js"
-
-    # Umami Analytics (self-hosted option)
-    # [params.analytics.umami]
-    #   enabled = true
-    #   scriptUrl = "https://analytics.yourdomain.com/script.js"
-    #   websiteId = "your-website-id"
-
-    # Fathom Analytics
-    # [params.analytics.fathom]
-    #   enabled = true
-    #   scriptUrl = "https://cdn.usefathom.com/script.js"
-    #   siteId = "YOUR-SITE-ID"
 
 # Navigation Menu
 [menu]
@@ -251,6 +219,15 @@ theme = "minimal-black"
     identifier = "blog"
     [menu.main.params]
       icon = "fa-regular fa-note-sticky"
+
+  [[menu.main]]
+    name = "Write Up's"
+    pageRef = "WriteUps"
+    url = "/WriteUps/"
+    weight = 5
+    identifier = "writeups"
+    [menu.main.params]
+      icon = "fa-regular fa-user"
 
 # Markup Configuration
 [markup]

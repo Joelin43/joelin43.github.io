@@ -1242,7 +1242,7 @@ video {
   --color-text: #111827;
   --color-text-muted: #6b7280;
   --color-border: #e5e7eb;
-  --color-accent: #ee331e;
+  --color-accent: #a855f7;
 }
 
 html[data-theme="dark"] {
@@ -1253,7 +1253,7 @@ html[data-theme="dark"] {
   --color-text: #f9fafb;
   --color-text-muted: #9ca3af;
   --color-border: #27272a;
-  --color-accent: #ee331e;
+  --color-accent: #c084fc;
 }
 
 /* Base Styles */

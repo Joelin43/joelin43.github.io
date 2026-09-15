@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Joelin43</title>
+		<title>Joel Rovira | IT &amp; Cybersecurity</title>
 		<link>http://localhost:1313/</link>
-		<description>Recent content on Joelin43</description>
+		<description>Recent content on Joel Rovira | IT &amp; Cybersecurity</description>
 		<generator>Hugo</generator>
 		<language>es</language>
 		
 		
 		
 		
+			<lastBuildDate>Mon, 14 Sep 2026 19:54:48 +0200</lastBuildDate>
+		
 			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Maquina1</title>
+				<link>http://localhost:1313/writeups/htb/maquina1/</link>
+				<pubDate>Mon, 14 Sep 2026 19:54:48 +0200</pubDate>
+				<guid>http://localhost:1313/writeups/htb/maquina1/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Prueba</title>
+				<link>http://localhost:1313/projects/prueba/</link>
+				<pubDate>Mon, 14 Sep 2026 19:46:05 +0200</pubDate>
+				<guid>http://localhost:1313/projects/prueba/</guid>
+				<description></description>
+			</item>
 	</channel>
 </rss>

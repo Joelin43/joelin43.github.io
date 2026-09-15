@@ -1,0 +1,38 @@
+{{ define "main" }}
+<section class="layout-page">
+  <div class="page-int section-stack">
+    <header class="space-y-2">
+      <h1 class="heading-page text-2xl sm:text-3xl">{{ .Title }}</h1>
+      {{ with .Description }}
+      <p class="max-w-xl text-sm text-muted">{{ . }}</p>
+      {{ end }}
+    </header>
+
+    {{ range .Sections.ByTitle }}
+    {{ $count := len .RegularPages }}
+    <div class="mb-12">
+      <!-- Cabecera del grupo -->
+      <div class="flex items-center gap-3 mb-5 pb-3 border-b border-border">
+        {{ with .Params.icon }}
+        <i class="{{ . }} text-accent text-lg"></i>
+        {{ end }}
+        <h2 class="heading-section text-lg">{{ .Title }}</h2>
+        <span class="card-tag-pill">{{ $count }} {{ if eq $count 1 }}writeup{{ else }}writeups{{ end }}</span>
+      </div>
+
+      {{ with .Params.description }}
+      <p class="mb-5 text-sm text-muted max-w-xl">{{ . }}</p>
+      {{ end }}
+
+      <!-- Grid de tarjetas de ese grupo -->
+      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        {{ range .RegularPages.ByDate.Reverse }}
+        {{ partial "components/writeup-card.html" (dict "Page" . "Root" $) }}
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+  </div>
+</section>
+{{ end }}

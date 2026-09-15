@@ -1,128 +1,61 @@
 +++
 title = "About Me"
-subtitle = "Software Engineer | Full Stack Developer | Open Source Enthusiast"
+subtitle = "IT & Cybersecurity Student"
 layout = "about-alternative"
 +++
 
-I'm a software engineer passionate about building elegant solutions to complex problems. Currently working on modern web applications and exploring the intersection of design, performance, and developer experience.
+I'm currently studying **Administration of Computer Systems and Networks (ASIR)**, with a strong interest in **cybersecurity, Linux, networking and software development**.
 
-## What I Do
+I like learning by actually building and experimenting with things. Most of my projects start from something I want to understand better, whether it's setting up a Linux environment, deploying something with Docker, writing a small Python script or building a cybersecurity lab.
 
-I work across the full stack with expertise in:
+## What I'm Interested In
 
-- **Backend Development** — Scalable APIs, microservices, database design
-- **Frontend Engineering** — React, Vue, modern JavaScript frameworks
-- **Cloud & DevOps** — AWS, Docker, Kubernetes, CI/CD pipelines
-- **Open Source** — Contributing to projects and building developer tools
+My main areas of interest are:
 
-## Current Projects
+- **Cybersecurity** — Learning penetration testing, offensive security and security fundamentals through hands-on labs and challenges.
+    
+- **Linux & Systems** — Working with Linux, configuring systems and understanding how everything fits together.
+    
+- **Networking** — Learning how networks work and improving my knowledge of infrastructure and system administration.
+    
+- **Programming** — Mainly using Python for scripting and automation, while exploring other technologies through personal projects.
+    
+- **Self-hosting & Infrastructure** — Experimenting with Docker, services, virtual machines and my own lab environments.
+    
+
+## What I'm Currently Doing
 
 Right now I'm focused on:
 
-- Building minimal Hugo themes for personal sites
-- Exploring dark-mode design patterns and accessibility
-- Writing about web performance and developer experience
-- Contributing to open-source projects in the web ecosystem
+- Learning **pentesting and offensive security** through platforms such as Hack The Box and TryHackMe.
+    
+- Building my own **home cybersecurity lab** with vulnerable machines and isolated environments.
+    
+- Improving my **Linux, networking and system administration** skills.
+    
+- Building personal projects and documenting what I learn.
+    
+- Developing this portfolio to keep track of my projects, experiments and write-ups.
+    
 
-## About This Layout
+## How I Learn
 
-> This page demonstrates the **alternative about layout** with a sidebar profile card.
+I prefer **hands-on learning**.
 
-### Key Features
+Instead of only following tutorials, I try to understand how things work by setting them up myself, breaking them, troubleshooting problems and documenting what I discover.
 
-This layout includes:
+That's also the reason why you'll find a mix of **projects, labs and write-ups** on this site.
 
-1. **Left Sidebar Profile Card** with:
-   - Avatar/profile image (or placeholder icon)
-   - Name and role
-   - Location indicator
-   - Customizable stats (configured in `hugo.toml`)
-   - Social media links
+## Technologies
 
-2. **Main Content Area** with:
-   - Introduction section
-   - Experience cards (from `---` separators)
-   - Tech stack badges (configured in `hugo.toml`)
+Some of the technologies and tools I've been working with include:
 
-### How to Configure
+**Linux · Python · Docker · Git · Bash · GitHub · Hugo · Markdown**
 
-**Stats and Skills** are parametrized in your `hugo.toml`:
+This list will probably keep changing as I learn new things.
 
-```toml
-[params.about.alt]
-  # Custom stats
-  [[params.about.alt.stats]]
-    value = "5+"
-    label = "Years Coding"
+## What's Next
 
-  # Tech stack with icons
-  [[params.about.alt.skills]]
-    label = "JavaScript"
-    icon = "devicon-javascript-plain"
-```
+My goal is to keep building a solid foundation in **IT and cybersecurity**, while gaining more practical experience through projects, labs and challenges.
 
-This makes it easy to update your stats and skills without editing this page!
-
----
-
-**Lead Developer** — [Modern Tech Co](https://example.com)
-*2022 – Present • Remote*
-
-Leading development of cloud-native applications and mentoring engineering teams. Focus on scalable architecture, clean code practices, and continuous delivery.
-
----
-
-**Senior Engineer** — Startup Ventures
-*2020 – 2022 • San Francisco*
-
-Built full-stack applications from scratch. Worked with React, Node.js, PostgreSQL, and AWS to deliver features serving hundreds of thousands of users.
-
----
-
-**Software Engineer** — Digital Solutions
-*2018 – 2020 • New York*
-
-Developed enterprise applications using Java, Spring Boot, and modern frontend frameworks. Collaborated with cross-functional teams to ship quality software.
-
----
-
-**Junior Developer** — Tech Academy
-*2016 – 2018 • Boston*
-
-Started my career building web applications and learning industry best practices. Contributed to client projects and internal tooling.
-
----
-
-## Layout Comparison
-
-| Feature | Standard About | Alternative About |
-|---------|---------------|-------------------|
-| Layout | Centered, single column | Sidebar + content |
-| Profile Info | Top hero section | Left sidebar card |
-| Stats | Not included | Configurable stats grid |
-| Tech Stack | Not included | Icon badges |
-| Timeline | Vertical with markers | Card-based grid |
-| Best For | Traditional resumes | Modern portfolios |
-
-Try both layouts to see which fits your style! Switch by changing `layout = "about"` or `layout = "about-alternative"` in the frontmatter.
-
-### Responsive Design
-
-Both layouts are fully responsive:
-- **Desktop:** Sidebar + content (alternative) or centered (standard)
-- **Tablet:** Stacked layout with adjusted spacing
-- **Mobile:** Single column, optimized for small screens
-
----
-
-## Get Started
-
-To use this layout on your site:
-
-1. Copy this content file structure
-2. Set `layout = "about-alternative"` in frontmatter
-3. Configure stats and skills in `hugo.toml`
-4. Add your own content and experience
-5. Optionally add an avatar image to `static/images/`
-
-That's it! The theme handles all the styling and responsive behavior automatically.
+I'm still learning, so this website is also a way of documenting that process and seeing how my skills develop over time.
