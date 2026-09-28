@@ -2,31 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-09-14T19:54:48+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/writeups/htb/maquina1/</loc>
-    <lastmod>2026-09-14T19:54:48+02:00</lastmod>
+    <loc>http://localhost:1313/writeups/htb/</loc>
+    <lastmod>2026-09-14T19:50:29+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/writeups/thm/</loc>
     <lastmod>2026-09-14T19:50:32+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/writeups/htb/</loc>
-    <lastmod>2026-09-14T19:50:29+02:00</lastmod>
+    <loc>http://localhost:1313/writeups/overthewire/</loc>
+    <lastmod>2026-09-14T19:50:32+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/writeups/htb/maquina1-copy/</loc>
+    <lastmod>2026-09-20T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/writeups/htb/maquina1/</loc>
+    <lastmod>2026-09-20T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-09-20T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/privesc/</loc>
+    <lastmod>2026-09-20T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-09-20T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/web/</loc>
+    <lastmod>2026-09-20T10:00:00+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/writeups/</loc>
     <lastmod>2026-09-14T19:50:06+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2026-09-14T19:46:05+02:00</lastmod>
+    <lastmod>2026-09-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/prueba/</loc>
-    <lastmod>2026-09-14T19:46:05+02:00</lastmod>
+    <loc>http://localhost:1313/projects/pyrecon/</loc>
+    <lastmod>2026-09-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

@@ -16,7 +16,7 @@
   {{- end -}}
 {{- end -}}
 
-<article class="card card-pad card-home card-home--writeup group" style="--wu-color: {{ $color }}; --wu-diff: {{ $diffVar }};">
+<article class="card card-pad card-home card-home--writeup group" style="--wu-color: {{ $color | safeCSS }}; --wu-diff: {{ $diffVar | safeCSS }};">
   <a href="{{ $p.RelPermalink }}" class="card-home-body">
     <div class="card-home-header">
       <div class="card-home-icon card-home-icon--writeup">

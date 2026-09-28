@@ -1,9 +1,9 @@
 :root {
   --color-bg: #f9fafb;
-  --color-accent: #ee331e;
+  --color-accent: #e00a3c;
 }
 
 html[data-theme="dark"] {
   --color-bg: #000000;
-  --color-accent: #ee331e;
+  --color-accent: #e00a3c;
 }

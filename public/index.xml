@@ -10,22 +10,29 @@
 		
 		
 		
-			<lastBuildDate>Mon, 14 Sep 2026 19:54:48 +0200</lastBuildDate>
+			<lastBuildDate>Sun, 20 Sep 2026 10:00:00 +0200</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
 			<item>
-				<title>Maquina1</title>
+				<title>Cap</title>
+				<link>http://localhost:1313/writeups/htb/maquina1-copy/</link>
+				<pubDate>Sun, 20 Sep 2026 10:00:00 +0200</pubDate>
+				<guid>http://localhost:1313/writeups/htb/maquina1-copy/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Cap</title>
 				<link>http://localhost:1313/writeups/htb/maquina1/</link>
-				<pubDate>Mon, 14 Sep 2026 19:54:48 +0200</pubDate>
+				<pubDate>Sun, 20 Sep 2026 10:00:00 +0200</pubDate>
 				<guid>http://localhost:1313/writeups/htb/maquina1/</guid>
 				<description></description>
 			</item>
 			<item>
-				<title>Prueba</title>
-				<link>http://localhost:1313/projects/prueba/</link>
-				<pubDate>Mon, 14 Sep 2026 19:46:05 +0200</pubDate>
-				<guid>http://localhost:1313/projects/prueba/</guid>
-				<description></description>
+				<title>PyRecon</title>
+				<link>http://localhost:1313/projects/pyrecon/</link>
+				<pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/projects/pyrecon/</guid>
+				<description>&lt;blockquote class=&#34;md-blockquote&#34;&gt;&#xA;    &lt;p&gt;A small Python networking project created to explore network reconnaissance, automation and command-line tooling.&lt;/p&gt;&#xA;&#xA;  &lt;/blockquote&gt;&lt;h2 id=&#34;sobre-el-proyecto&#34;&gt;&#xA;  &lt;a href=&#34;#sobre-el-proyecto&#34; class=&#34;md-heading-anchor&#34;&gt;&#xA;    Sobre el proyecto&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;PyReacon&lt;/strong&gt; es uno de mis proyectos personales en Python, creado como una forma de aprender y experimentar con conceptos relacionados con &lt;strong&gt;redes, reconocimiento y automatización&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;por-qué-lo-hice&#34;&gt;&#xA;  &lt;a href=&#34;#por-qu%c3%a9-lo-hice&#34; class=&#34;md-heading-anchor&#34;&gt;&#xA;    ¿Por qué lo hice?&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;Al estar empezando en ciberseguridad me di cuenta que al probar maquinas o laboratorios, al final la herramienta que mas utilizaba era &lt;strong&gt;NMAP&lt;/strong&gt;. Vi que era un proceso muy repetitivo para acabar siempre haciendo lo mismo.&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>

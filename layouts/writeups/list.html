@@ -1,6 +1,9 @@
 {{ define "main" }}
 <section class="layout-page">
   <div class="page-int section-stack">
+
+{{ if .Parent.IsHome }}
+    {{/* ===== /writeups/ : cuadrados de plataformas (HTB, THM, ...) ===== */}}
     <header class="space-y-2">
       <h1 class="heading-page text-2xl sm:text-3xl">{{ .Title }}</h1>
       {{ with .Description }}
@@ -8,30 +11,73 @@
       {{ end }}
     </header>
 
-    {{ range .Sections.ByTitle }}
-    {{ $count := len .RegularPages }}
-    <div class="mb-12">
-      <!-- Cabecera del grupo -->
-      <div class="flex items-center gap-3 mb-5 pb-3 border-b border-border">
-        {{ with .Params.icon }}
-        <i class="{{ . }} text-accent text-lg"></i>
-        {{ end }}
-        <h2 class="heading-section text-lg">{{ .Title }}</h2>
+    <div class="wu-platform-grid">
+      {{ range .Sections.ByWeight }}
+      {{ $count := len .RegularPagesRecursive }}
+      <a href="{{ .RelPermalink }}" class="wu-platform" style="--wu-color: {{ .Params.color | default "var(--color-accent)" | safeCSS }};">
+        <i class="{{ .Params.icon | default "fa-solid fa-flag-checkered" }} wu-platform-icon"></i>
+        <h2 class="wu-platform-title">{{ .Title }}</h2>
         <span class="card-tag-pill">{{ $count }} {{ if eq $count 1 }}writeup{{ else }}writeups{{ end }}</span>
-      </div>
-
-      {{ with .Params.description }}
-      <p class="mb-5 text-sm text-muted max-w-xl">{{ . }}</p>
+      </a>
       {{ end }}
+    </div>
 
-      <!-- Grid de tarjetas de ese grupo -->
+{{ else }}
+    {{/* ===== /writeups/<plataforma>/ : máquinas ordenadas por dificultad ===== */}}
+    {{ $color := .Params.color | default "var(--color-accent)" }}
+    {{ $pages := .RegularPagesRecursive.ByDate.Reverse }}
+    {{ $known := slice "easy" "medium" "hard" "insane" }}
+
+    <header class="space-y-2">
+      <a href="{{ .Parent.RelPermalink }}" class="wu-back link-underline"><i class="fa-solid fa-arrow-left"></i> {{ .Parent.Title }}</a>
+      <h1 class="heading-page text-2xl sm:text-3xl">{{ .Title }}</h1>
+      {{ with .Description }}
+      <p class="max-w-xl text-sm text-muted">{{ . }}</p>
+      {{ end }}
+    </header>
+
+    {{ if not $pages }}
+    <p class="text-sm text-muted">Todavía no hay writeups en esta plataforma.</p>
+    {{ end }}
+
+    {{ range $known }}
+    {{ $diff := . }}
+    {{ $group := slice }}
+    {{ range $pages }}
+      {{ if eq (lower (string .Params.difficulty)) $diff }}
+        {{ $group = $group | append . }}
+      {{ end }}
+    {{ end }}
+    {{ if $group }}
+    <div class="mb-10">
+      <h2 class="wu-group-head" style="--wu-diff: var(--wu-{{ $diff }});">{{ title $diff }} <span class="card-tag-pill">{{ len $group }}</span></h2>
       <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        {{ range .RegularPages.ByDate.Reverse }}
-        {{ partial "components/writeup-card.html" (dict "Page" . "Root" $) }}
+        {{ range $group }}
+        {{ partial "components/writeup-card.html" (dict "Page" . "Color" $color) }}
         {{ end }}
       </div>
     </div>
     {{ end }}
+    {{ end }}
+
+    {{/* Máquinas sin dificultad (o con una que no sea easy/medium/hard/insane) */}}
+    {{ $other := slice }}
+    {{ range $pages }}
+      {{ if not (in $known (lower (string .Params.difficulty))) }}
+        {{ $other = $other | append . }}
+      {{ end }}
+    {{ end }}
+    {{ if $other }}
+    <div class="mb-10">
+      <h2 class="wu-group-head">Unrated <span class="card-tag-pill">{{ len $other }}</span></h2>
+      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        {{ range $other }}
+        {{ partial "components/writeup-card.html" (dict "Page" . "Color" $color) }}
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+{{ end }}
 
   </div>
 </section>
